@@ -21,9 +21,9 @@ dataset = "CuringReport.csv",
 table ="Table Goes here."
 ))
 sections.append(table_section_template.render(
-deparment = "Deboning",
+department ="Deboning",
 dataset = "DeboningReport.csv",
-table = "Table Goes Here."
+table ="Table Goes here."
 ))
 
 
