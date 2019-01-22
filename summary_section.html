@@ -1,0 +1,15 @@
+<section class="container" id="summary">
+<h2>Quick summary</h2>
+<h3>Curing</h3>
+{% for department_results in department_results_list %}
+<p><em>{{ department_results.department_name }}</em> took in {{department_results.total_weight}}</p>
+{% endfor %}
+<h3>Deboning</h3>
+{% for department_results in department_results_list %}
+<p><em>{{ department_results.department_name }}</em> deboned {{department_results.total_weight}} with a yield of {{department_results.yield}}</p>
+{% endfor %}
+<h3>Slicing</h3>
+{% for department_results in department_results_list %}
+<p><em>{{ department_results.department_name }}</em> took in {{department_results.total_weight}} with waste totalling {{department_results.waste}} for a yield of {{department_results.yield}}</p>
+{% endfor %}
+</section>

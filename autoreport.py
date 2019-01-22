@@ -50,7 +50,7 @@ sections.append(table_section_template.render(
 department ="Slicing",
 dataset = "SliReport.csv",
 table =csv_to_html("datasets/SlicingReport.csv")
-
+))
 with open("outputs/report.html", "w") as f:
     f.write(base_template.render(
 	title = title,
