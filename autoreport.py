@@ -1,7 +1,9 @@
+#imports
 import pandas as pd
 from jinja2 import FileSystemLoader, Environment
 
 from datetime import date
+
 today = str(date.today())
 
 #Allow for very wide columns - otherwise columns are spaced and ellipse'd
@@ -32,7 +34,6 @@ def main():
     Render a template and write it to file.
     :return:
     """
-
 # Content to be published
 title = "Daily Report For %s" %today
 sections = list()
@@ -59,4 +60,4 @@ with open("outputs/report.html", "w") as f:
 
 
 if __name__ == "__main__":
-    main()
+	main()
